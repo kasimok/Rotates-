@@ -13,10 +13,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-
     
     @IBAction func buttonAction(_ sender: Any) {
         let uiviewcontroller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "imageView")
+//        uiviewcontroller.modalPresentationStyle = .overCurrentContext
+//        self.tabBarController?.present(uiviewcontroller, animated: true)
+        
+        
         uiviewcontroller.modalPresentationStyle = .fullScreen
         self.present(uiviewcontroller, animated: true, completion: nil)
     }
