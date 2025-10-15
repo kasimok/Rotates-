@@ -30,6 +30,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        // Check if the top view controller is ImageViewController
+        if let windowScene = window?.windowScene,
+           let rootViewController = windowScene.windows.first?.rootViewController {
+            if let presentedViewController = rootViewController.presentedViewController {
+                return presentedViewController.supportedInterfaceOrientations
+            }
+        }
+        // Default to portrait for the rest of the app
+        return .portrait
+    }
 
 
 }

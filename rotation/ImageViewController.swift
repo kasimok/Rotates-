@@ -15,6 +15,14 @@ class ImageViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscape
+    }
+    
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return .landscapeRight
+    }
+    
     @IBAction func closeAction(_ sender: Any) {
         dismiss(animated: true)
     }
