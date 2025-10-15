@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2YW-ZX-Rdz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DSO-LK-afb">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Beijing-->
+        <!--China-->
         <scene sceneID="cyX-lY-fQb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2YW-ZX-Rdz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Beijing" image="photo" catalog="system" id="asF-PQ-Gjl"/>
+                    <tabBarItem key="tabBarItem" title="China" image="photo.fill" catalog="system" id="asF-PQ-Gjl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RlO-KY-TYh">
                         <rect key="frame" x="0.0" y="118" width="393" height="54"/>
@@ -25,7 +26,23 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4Z-un-maF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1049.6183206106871" y="136.61971830985917"/>
+            <point key="canvasLocation" x="1976.3358778625955" y="136.61971830985917"/>
+        </scene>
+        <!--USA-->
+        <scene sceneID="EnZ-eT-fdP">
+            <objects>
+                <viewController id="esR-Cu-iph" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IE1-Bj-aAV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="bNh-Z1-0rp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="USA" image="photo.fill" catalog="system" id="urU-lL-ER7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mWs-CV-K7X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1953" y="869"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FdE-QH-BiD">
@@ -34,7 +51,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Oha-LL-JMR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="AccentColor"/>
                         <sections>
                             <tableViewSection id="f9e-D3-VyT">
                                 <cells>
@@ -112,7 +129,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfQ-df-fHF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2038" y="135"/>
+            <point key="canvasLocation" x="2964.1221374045799" y="134.50704225352112"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="pQu-f2-gdM">
@@ -162,7 +179,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="2915" y="137"/>
+            <point key="canvasLocation" x="3840.4580152671756" y="136.61971830985917"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="gnB-a6-WTz">
@@ -212,7 +229,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="4302" y="137"/>
+            <point key="canvasLocation" x="5228.2442748091598" y="136.61971830985917"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="lMk-ug-ceL">
@@ -262,14 +279,35 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="3615" y="135"/>
+            <point key="canvasLocation" x="4541.221374045801" y="134.50704225352112"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LHm-sU-aLS">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DSO-LK-afb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w5g-Sm-srM">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2YW-ZX-Rdz" kind="relationship" relationship="viewControllers" id="whw-MT-ZCn"/>
+                        <segue destination="esR-Cu-iph" kind="relationship" relationship="viewControllers" id="E1J-qB-7qX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OkG-cG-WzF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049.6183206106871" y="136.61971830985917"/>
         </scene>
     </scenes>
     <resources>
-        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="photo-1474181487882-5abf3f0ba6c2.avif" width="900" height="600"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
         <image name="premium_photo-1661964121314-cb43af3580a1.avif" width="900" height="600"/>
         <image name="premium_photo-1664304488525-44a96338c0cc.avif" width="900" height="909"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
