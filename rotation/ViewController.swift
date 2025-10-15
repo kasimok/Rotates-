@@ -29,7 +29,8 @@ class ViewController: UITableViewController {
     
     @IBAction func buttonActionHuNan(_ sender: Any) {
         let uiviewcontroller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "imageViewHuNan")
-        uiviewcontroller.modalPresentationStyle = .fullScreen
+        uiviewcontroller.modalPresentationStyle = .overFullScreen
+        uiviewcontroller.modalPresentationCapturesStatusBarAppearance = true
         self.present(uiviewcontroller, animated: true, completion: nil)
     }
     

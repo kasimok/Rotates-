@@ -65,7 +65,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6b-DR-1CN">
                                                     <rect key="frame" x="0.0" y="0.0" width="393" height="35.333333333333336"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Beijing"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Beijing(.fullscreen)-Flickers"/>
                                                     <connections>
                                                         <action selector="buttonActionBeijing:" destination="1fu-xj-t3r" eventType="touchUpInside" id="hco-Pm-vhJ"/>
                                                     </connections>
@@ -90,7 +90,7 @@
                                                     <rect key="frame" x="0.0" y="7.6666679382324219" width="393" height="35.333333333333343"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="ShangHai"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="ShangHai(.fullscreen)-Flickers"/>
                                                     <connections>
                                                         <action selector="buttonActionShangHai:" destination="1fu-xj-t3r" eventType="touchUpInside" id="nn3-wk-Rd7"/>
                                                     </connections>
@@ -109,7 +109,7 @@
                                                     <rect key="frame" x="0.0" y="7.6666679382324219" width="393" height="35.333333333333343"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="HuNan"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="HuNan(.overfullscreen)-Perfect"/>
                                                     <connections>
                                                         <action selector="buttonActionHuNan:" destination="1fu-xj-t3r" eventType="touchUpInside" id="vHj-Pz-r0V"/>
                                                     </connections>
@@ -134,7 +134,6 @@
         <!--Image View Controller-->
         <scene sceneID="pQu-f2-gdM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qha-Mh-l1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="imageViewBeijing" id="LxD-Xc-Lb3" customClass="ImageViewController" customModule="rotation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Vq-oB-GZM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -178,13 +177,13 @@
                         <outlet property="imageView" destination="TnX-z4-NQA" id="b2Q-LB-SGA"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qha-Mh-l1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3840.4580152671756" y="136.61971830985917"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="gnB-a6-WTz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="khs-ca-jPe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="imageViewHuNan" id="vP3-x4-66T" customClass="ImageViewController" customModule="rotation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1bV-TE-TL0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -228,13 +227,13 @@
                         <outlet property="imageView" destination="WBh-I8-PVq" id="9m3-Ww-W7r"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khs-ca-jPe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5228.2442748091598" y="136.61971830985917"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="lMk-ug-ceL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aln-z9-pJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="imageViewShangHai" id="mKG-T1-t5e" customClass="ImageViewController" customModule="rotation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="svD-NB-xO3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -278,6 +277,7 @@
                         <outlet property="imageView" destination="lU4-zD-qPA" id="xp5-Si-lVY"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aln-z9-pJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4541.221374045801" y="134.50704225352112"/>
         </scene>
@@ -287,6 +287,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="DSO-LK-afb" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="w5g-Sm-srM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

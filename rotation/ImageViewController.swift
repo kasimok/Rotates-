@@ -23,6 +23,14 @@ class ImageViewController: UIViewController {
         return .landscapeRight
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .fade
+    }
+    
     @IBAction func closeAction(_ sender: Any) {
         dismiss(animated: true)
     }
