@@ -7,21 +7,33 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UITableViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
     
-    @IBAction func buttonAction(_ sender: Any) {
-        let uiviewcontroller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "imageView")
-//        uiviewcontroller.modalPresentationStyle = .overCurrentContext
-//        self.tabBarController?.present(uiviewcontroller, animated: true)
-        
-        
+    
+    @IBAction func buttonActionBeijing(_ sender: Any) {
+        let uiviewcontroller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "imageViewBeijing")
         uiviewcontroller.modalPresentationStyle = .fullScreen
         self.present(uiviewcontroller, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func buttonActionShangHai(_ sender: Any) {
+        let uiviewcontroller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "imageViewShangHai")
+        uiviewcontroller.modalPresentationStyle = .fullScreen
+        self.present(uiviewcontroller, animated: true, completion: nil)
+    }
+    
+    @IBAction func buttonActionHuNan(_ sender: Any) {
+        let uiviewcontroller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "imageViewHuNan")
+        uiviewcontroller.modalPresentationStyle = .fullScreen
+        self.present(uiviewcontroller, animated: true, completion: nil)
+    }
+    
+    
+    
 }
 

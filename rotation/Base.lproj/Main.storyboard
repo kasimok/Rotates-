@@ -8,45 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="rotation" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="upc-1A-ARx" customClass="Image">
-                                <rect key="frame" x="0.0" y="172" width="393" height="612"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9CG-DK-MPb">
-                                        <rect key="frame" x="153" y="264" width="87" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button 1"/>
-                                        <connections>
-                                            <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kqG-ph-svd"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemCyanColor"/>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="upc-1A-ARx" secondAttribute="bottom" id="NAe-3m-q72"/>
-                            <constraint firstItem="upc-1A-ARx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NoZ-hH-UD7"/>
-                            <constraint firstItem="upc-1A-ARx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="OgL-QX-13I"/>
-                            <constraint firstAttribute="trailing" secondItem="upc-1A-ARx" secondAttribute="trailing" id="aLh-It-qSl"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="yh1-hM-BeS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1976.3358778625955" y="136.61971830985917"/>
-        </scene>
         <!--Beijing-->
         <scene sceneID="cyX-lY-fQb">
             <objects>
@@ -59,18 +20,105 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="sA3-6W-5te"/>
+                        <segue destination="1fu-xj-t3r" kind="relationship" relationship="rootViewController" id="kX2-nn-jio"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O4Z-un-maF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1049.6183206106871" y="136.61971830985917"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="FdE-QH-BiD">
+            <objects>
+                <tableViewController id="1fu-xj-t3r" customClass="ViewController" customModule="rotation" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Oha-LL-JMR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection id="f9e-D3-VyT">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="wco-mq-6PM">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="35.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wco-mq-6PM" id="Z5u-Zn-DAX">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="35.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6b-DR-1CN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="35.333333333333336"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Beijing"/>
+                                                    <connections>
+                                                        <action selector="buttonActionBeijing:" destination="1fu-xj-t3r" eventType="touchUpInside" id="hco-Pm-vhJ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="f6b-DR-1CN" firstAttribute="top" secondItem="Z5u-Zn-DAX" secondAttribute="top" id="A2w-AW-j7z"/>
+                                                <constraint firstAttribute="trailing" secondItem="f6b-DR-1CN" secondAttribute="trailing" id="o1b-p6-7ac"/>
+                                                <constraint firstAttribute="bottom" secondItem="f6b-DR-1CN" secondAttribute="bottom" id="r1K-gV-47V"/>
+                                                <constraint firstItem="f6b-DR-1CN" firstAttribute="leading" secondItem="Z5u-Zn-DAX" secondAttribute="leading" id="sQ3-Ma-Bpw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="oom-Vk-sCh">
+                                        <rect key="frame" x="0.0" y="85.333332061767578" width="393" height="51"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oom-Vk-sCh" id="Zvz-mT-Lsn">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="51"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeM-j0-UZt">
+                                                    <rect key="frame" x="0.0" y="7.6666679382324219" width="393" height="35.333333333333343"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="ShangHai"/>
+                                                    <connections>
+                                                        <action selector="buttonActionBeijing:" destination="1fu-xj-t3r" eventType="touchUpInside" id="0gh-h0-xAI"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Dja-Dn-tAF">
+                                        <rect key="frame" x="0.0" y="136.33333206176758" width="393" height="51"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dja-Dn-tAF" id="hAF-Xp-lVA">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="51"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bg-nT-UUq">
+                                                    <rect key="frame" x="0.0" y="7.6666679382324219" width="393" height="35.333333333333343"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="HuNan"/>
+                                                    <connections>
+                                                        <action selector="buttonActionBeijing:" destination="1fu-xj-t3r" eventType="touchUpInside" id="eVs-sh-nV2"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="1fu-xj-t3r" id="de6-cx-fiy"/>
+                            <outlet property="delegate" destination="1fu-xj-t3r" id="THE-Ia-CJI"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="lH1-Vs-Ihk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfQ-df-fHF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2038" y="135"/>
+        </scene>
         <!--Image View Controller-->
         <scene sceneID="pQu-f2-gdM">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qha-Mh-l1N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="imageView" id="LxD-Xc-Lb3" customClass="ImageViewController" customModule="rotation" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="imageViewBeijing" id="LxD-Xc-Lb3" customClass="ImageViewController" customModule="rotation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Vq-oB-GZM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,6 +156,7 @@
                             <constraint firstItem="47w-1j-lUz" firstAttribute="top" secondItem="1Vq-oB-GZM" secondAttribute="top" constant="48" id="tHw-92-dDT"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="4h4-uN-lDa"/>
                     <connections>
                         <outlet property="imageView" destination="TnX-z4-NQA" id="b2Q-LB-SGA"/>
                     </connections>
@@ -115,15 +164,114 @@
             </objects>
             <point key="canvasLocation" x="2915" y="137"/>
         </scene>
+        <!--Image View Controller-->
+        <scene sceneID="gnB-a6-WTz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="khs-ca-jPe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="imageViewHuNan" id="vP3-x4-66T" customClass="ImageViewController" customModule="rotation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1bV-TE-TL0">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="premium_photo-1661964121314-cb43af3580a1.avif" translatesAutoresizingMaskIntoConstraints="NO" id="WBh-I8-PVq">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HuNan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRE-6c-97G">
+                                <rect key="frame" x="160.33333333333334" y="118" width="72.333333333333343" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDX-0R-Ueo" userLabel="Close">
+                                <rect key="frame" x="324" y="48" width="53" height="68"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="X">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeAction:" destination="vP3-x4-66T" eventType="touchUpInside" id="FwB-zX-wfj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k6N-TK-7dW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="BDX-0R-Ueo" secondAttribute="trailing" constant="16" id="7Vl-eW-2U4"/>
+                            <constraint firstItem="BDX-0R-Ueo" firstAttribute="top" secondItem="1bV-TE-TL0" secondAttribute="top" constant="48" id="CTb-BD-xYW"/>
+                            <constraint firstItem="pRE-6c-97G" firstAttribute="centerX" secondItem="1bV-TE-TL0" secondAttribute="centerX" id="Ybv-uL-8dR"/>
+                            <constraint firstItem="pRE-6c-97G" firstAttribute="top" secondItem="1bV-TE-TL0" secondAttribute="top" constant="118.00000000000001" id="eVD-pZ-fzZ"/>
+                            <constraint firstAttribute="bottom" secondItem="WBh-I8-PVq" secondAttribute="bottom" id="kCE-4y-k7o"/>
+                            <constraint firstItem="WBh-I8-PVq" firstAttribute="leading" secondItem="1bV-TE-TL0" secondAttribute="leading" id="l49-TQ-pIx"/>
+                            <constraint firstItem="WBh-I8-PVq" firstAttribute="top" secondItem="1bV-TE-TL0" secondAttribute="top" id="vZY-7h-oM7"/>
+                            <constraint firstAttribute="trailing" secondItem="WBh-I8-PVq" secondAttribute="trailing" id="w8h-xb-30x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MNm-Ds-Eey"/>
+                    <connections>
+                        <outlet property="imageView" destination="WBh-I8-PVq" id="9m3-Ww-W7r"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="4302" y="137"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="lMk-ug-ceL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aln-z9-pJb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="imageViewShangHai" id="mKG-T1-t5e" customClass="ImageViewController" customModule="rotation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="svD-NB-xO3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-1474181487882-5abf3f0ba6c2.avif" translatesAutoresizingMaskIntoConstraints="NO" id="lU4-zD-qPA">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ShangHai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny8-Or-eqQ">
+                                <rect key="frame" x="146" y="118" width="101" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X8Q-Sz-6eE" userLabel="Close">
+                                <rect key="frame" x="324" y="48" width="53" height="68"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="X">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="45"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeAction:" destination="mKG-T1-t5e" eventType="touchUpInside" id="TY2-cx-HkK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8ix-Jp-dtX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ny8-Or-eqQ" firstAttribute="centerX" secondItem="svD-NB-xO3" secondAttribute="centerX" id="3Hr-4e-mg1"/>
+                            <constraint firstItem="X8Q-Sz-6eE" firstAttribute="top" secondItem="svD-NB-xO3" secondAttribute="top" constant="48" id="95y-Yd-k5e"/>
+                            <constraint firstItem="lU4-zD-qPA" firstAttribute="leading" secondItem="svD-NB-xO3" secondAttribute="leading" id="HF7-eU-uHn"/>
+                            <constraint firstItem="lU4-zD-qPA" firstAttribute="top" secondItem="svD-NB-xO3" secondAttribute="top" id="NQM-Gd-73F"/>
+                            <constraint firstAttribute="trailing" secondItem="X8Q-Sz-6eE" secondAttribute="trailing" constant="16" id="PT9-0D-Xev"/>
+                            <constraint firstItem="ny8-Or-eqQ" firstAttribute="top" secondItem="svD-NB-xO3" secondAttribute="top" constant="118.00000000000001" id="TBM-ls-itS"/>
+                            <constraint firstAttribute="bottom" secondItem="lU4-zD-qPA" secondAttribute="bottom" id="VOb-5G-dmh"/>
+                            <constraint firstAttribute="trailing" secondItem="lU4-zD-qPA" secondAttribute="trailing" id="zHl-XR-GdV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WYg-sw-GhO"/>
+                    <connections>
+                        <outlet property="imageView" destination="lU4-zD-qPA" id="xp5-Si-lVY"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3615" y="135"/>
+        </scene>
     </scenes>
     <resources>
         <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="photo-1474181487882-5abf3f0ba6c2.avif" width="900" height="600"/>
+        <image name="premium_photo-1661964121314-cb43af3580a1.avif" width="900" height="600"/>
         <image name="premium_photo-1664304488525-44a96338c0cc.avif" width="900" height="909"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
