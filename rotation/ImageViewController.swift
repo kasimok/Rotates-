@@ -11,12 +11,10 @@ class ImageViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    private var isLandscape: Bool = true
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return .landscape
+        return isLandscape ? .landscape : .portrait
     }
     
     override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
@@ -34,4 +32,10 @@ class ImageViewController: UIViewController {
     @IBAction func closeAction(_ sender: Any) {
         dismiss(animated: true)
     }
+    
+    @IBAction func rotateAction(_ sender: Any) {
+        isLandscape.toggle()
+        setNeedsUpdateOfSupportedInterfaceOrientations()
+    }
+    
 }
