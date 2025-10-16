@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>top-level-items</key>
+	<array>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>20</string>
+					<key>EndingLineNumber</key>
+					<string>33</string>
+					<key>StartingColumnNumber</key>
+					<string>9</string>
+					<key>StartingLineNumber</key>
+					<string>33</string>
+					<key>Timestamp</key>
+					<string>782274325.109544</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>rotation/AppDelegate.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>application</string>
+				<key>leading</key>
+				<string>    }
+    
+    func </string>
+				<key>trailing</key>
+				<string>(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -&gt; UIInterfaceOrientationMask {
+        // Check if the top view controller is ImageViewController
+        if let windowScene = window?.windowScene,
+</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>47</string>
+					<key>EndingLineNumber</key>
+					<string>15</string>
+					<key>StartingColumnNumber</key>
+					<string>17</string>
+					<key>StartingLineNumber</key>
+					<string>15</string>
+					<key>Timestamp</key>
+					<string>782274376.387031</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>rotation/ImageViewController.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>supportedInterfaceOrientations</string>
+				<key>leading</key>
+				<string>    private var isLandscape: Bool = true
+    
+    override var </string>
+				<key>trailing</key>
+				<string>: UIInterfaceOrientationMask {
+        return isLandscape ? .landscape : .portrait
+    }
+</string>
+			</dict>
+			<key>title</key>
+			<string>supportedInterfaceOrientations</string>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+		<dict>
+			<key>destination</key>
+			<dict>
+				<key>location-parameters</key>
+				<dict>
+					<key>EndingColumnNumber</key>
+					<string>69</string>
+					<key>EndingLineNumber</key>
+					<string>49</string>
+					<key>StartingColumnNumber</key>
+					<string>25</string>
+					<key>StartingLineNumber</key>
+					<string>49</string>
+					<key>Timestamp</key>
+					<string>782275026.606759</string>
+				</dict>
+				<key>rebasable-url</key>
+				<dict>
+					<key>base</key>
+					<string>workspace</string>
+					<key>payload</key>
+					<dict>
+						<key>relative-path</key>
+						<string>rotation/ViewController.swift</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>text-context</key>
+			<dict>
+				<key>focused</key>
+				<string>modalPresentationCapturesStatusBarAppearance</string>
+				<key>leading</key>
+				<string>        let uiviewcontroller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "imageViewHuNan")
+        uiviewcontroller.modalPresentationStyle = .overFullScreen
+        uiviewcontroller.</string>
+				<key>trailing</key>
+				<string> = true
+        self.present(uiviewcontroller, animated: true, completion: nil)
+    }
+</string>
+			</dict>
+			<key>type</key>
+			<string>bookmark</string>
+		</dict>
+	</array>
+</dict>
+</plist>
